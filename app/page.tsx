@@ -23,11 +23,8 @@ export default function DashboardPage() {
         <div className="right-column">
           <BatteryIndicator ros={ros} />
           <KillSwitch ros={ros} />
+          <CameraFeed />
         </div>
-      </div>
-
-      <div className="camera-row">
-        <CameraFeed />
       </div>
     </main>
   );
