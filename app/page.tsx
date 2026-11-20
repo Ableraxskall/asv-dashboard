@@ -21,16 +21,10 @@ export default function DashboardPage() {
       </div>
 
       <div className="layout">
-        <div className="left-column">
-          <div className="mission-row">
-            <MissionState ros={ros} />
-            <KillSwitch ros={ros} />
-          </div>
-          <ArenaMap ros={ros} />
-        </div>
-        <div className="right-column">
-          <CameraFeed />
-        </div>
+        <MissionState ros={ros} />
+        <KillSwitch ros={ros} />
+        <ArenaMap ros={ros} />
+        <CameraFeed />
       </div>
     </main>
   );

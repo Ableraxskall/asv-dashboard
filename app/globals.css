@@ -1,13 +1,7 @@
 .layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 16px;
-}
-
-.left-column,
-.right-column {
-  display: flex;
-  flex-direction: column;
+  align-items: start;
   gap: 16px;
 }
 
@@ -17,18 +11,6 @@
   align-items: flex-start;
   gap: 16px;
   flex-wrap: wrap;
-}
-
-.mission-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.camera-row {
-  margin-top: 16px;
 }
 
 .camera-feed {
