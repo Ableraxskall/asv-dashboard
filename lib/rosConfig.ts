@@ -1,6 +1,6 @@
 export const ROSBRIDGE_URL = process.env.NEXT_PUBLIC_ROSBRIDGE_URL ?? 'ws://localhost:9090';
 export const WEB_VIDEO_SERVER_URL = process.env.NEXT_PUBLIC_WEB_VIDEO_SERVER_URL ?? 'http://localhost:8080';
-export const CAMERA_TOPIC = '/wamv/sensors/cameras/front_left_camera_sensor/image_raw'; // confirm via `ros2 topic list`
+export const CAMERA_TOPIC = '/perception/hsv/debug';
 
 export const TOPICS = {
   gps: {
