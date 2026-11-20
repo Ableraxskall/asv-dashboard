@@ -9,7 +9,18 @@ export default function CameraFeed() {
     <div className="card">
       <h2>Camera</h2>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={streamUrl} alt="WAM-V front camera feed" className="camera-feed" />
+      <img
+        src={streamUrl}
+        alt="WAM-V front camera feed"
+        className="camera-feed"
+        style={{
+          width: '100%',
+          height: 'auto',
+          aspectRatio: '4 / 3',
+          objectFit: 'cover',
+          borderRadius: '8px',
+        }}
+      />
     </div>
   );
 }

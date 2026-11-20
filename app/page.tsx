@@ -12,17 +12,23 @@ export default function DashboardPage() {
 
   return (
     <main className="dashboard">
-      <h1>ASV Mission Dashboard</h1>
-      <p className={`status status-${status}`}>rosbridge: {status}</p>
+      <div className="header-row">
+        <div>
+          <h1>ASV Mission Dashboard</h1>
+          <p className={`status status-${status}`}>rosbridge: {status}</p>
+        </div>
+        <BatteryIndicator ros={ros} />
+      </div>
 
       <div className="layout">
         <div className="left-column">
-          <MissionState ros={ros} />
+          <div className="mission-row">
+            <MissionState ros={ros} />
+            <KillSwitch ros={ros} />
+          </div>
           <ArenaMap ros={ros} />
         </div>
         <div className="right-column">
-          <BatteryIndicator ros={ros} />
-          <KillSwitch ros={ros} />
           <CameraFeed />
         </div>
       </div>
